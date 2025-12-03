@@ -1,0 +1,39 @@
+/* Jessica Gita Maharani - Chaca
+Kelas X RPL SMKN 2 Buduran Sidoarjo */
+body {
+    background-color: aqua;
+}
+/* Margin Padding Position */
+div {
+    border: 2px solid red;
+    margin: 100px 0px 0px 50px;
+    padding-top: 20px;
+}
+
+nav {
+    border: 3px solid black;
+}
+
+/* Materi Selector CSS */
+
+img {
+    width: 200px;
+}
+
+.batas {
+    margin-left: 200px;
+}
+
+.warna {
+    background-color: yellow;
+}
+
+#bekgron {
+    background-color: red;
+    position: sticky;
+    left: 200px;
+}
+
+#kiri {
+    margin-left: 200px;
+}
