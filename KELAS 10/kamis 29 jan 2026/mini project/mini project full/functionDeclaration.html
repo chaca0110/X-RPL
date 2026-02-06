@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration Function</title>
+</head>
+<body>
+    <!-- Mini Project 1 -->
+ <h3>Kalkulator</h3>
+
+    <input id="a" type="number">
+    <input id="b" type="number">
+
+    <button onclick="tambah()">Tambah</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function tambah() {
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            let hasil = a + b;
+
+            document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+        }
+    </script>
+
+<!-- Mini Project 2 -->
+<input id="nilai" />
+    <button onclick="cek()">Cek</button>
+
+    <script>
+        let nilai = document.getElementById("nilai");
+let hasil = document.getElementById("hasil");
+      function cek() {
+        hasil.innerHTML = nilai.value >= 75 ? "Lulus" : "Tidak Lulus";
+      }
+    </script>
+
+<!-- Mini Project 3 --> 
+<input id="c">
+<button onclick="konversi()">Konversi</button>
+
+<p id="hasil"></p>
+
+<script>
+    let c = document.getElementById("c");
+    let hasil1 = document.getElementById("hasil");
+
+    function konversi(){
+        hasil1.innerHTML = (c.value * 9 / 5) + 32;
+    }
+</script>
+
+<!-- Mini Project 4 -->
+ <input id="tahun">
+<button onclick="umur()">Hitung Umur</button>
+
+<p id="hasil"></p>
+
+<script>
+    let tahun = document.getElementById("tahun");
+    let hasil2 = document.getElementById("hasil");
+
+    function umur() {
+        hasil2.innerHTML = 2026 - tahun.value;
+    }
+</script>
+
+<!-- Mini Project 5 -->
+<input id="harga" placeholder="Masukkan Harga">
+<button onclick="diskon()">Diskon</button>
+
+<p id="hasil"></p>
+
+<script>
+    let harga = document.getElementById("harga");
+    let hasil3 = document.getElementById("hasil");
+
+    function diskon(){
+        // LOGIC ASLI KAMU
+        hasil3.innerHTML = harga.value * 0.1;
+    }
+</script>
+</body>
+</html>

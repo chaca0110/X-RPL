@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Mini Project 1 -->
+<input id="n">
+<button onclick="kuadrat()">Kuadrat</button>
+<p id="hasil1"></p>
+
+<script>
+  const n = document.getElementById("n");
+  const hasil1 = document.getElementById("hasil1");
+
+  const kuadrat = () => (hasil1.innerHTML = n.value * n.value);
+</script>
+
+<hr>
+
+<!-- Mini Project 2 -->
+<input id="harga">
+<button onclick="pajak()">Pajak</button>
+<p id="hasil2"></p>
+
+<script>
+  const harga = document.getElementById("harga");
+  const hasil2 = document.getElementById("hasil2");
+
+  const pajak = () => (hasil2.innerHTML = harga.value * 0.1);
+</script>
+
+<hr>
+
+<!-- Mini Project 3 -->
+<input id="a"><input id="b">
+<button onclick="jumlah()">Jumlah</button>
+<p id="hasil3"></p>
+
+<script>
+  const a = document.getElementById("a");
+  const b = document.getElementById("b");
+  const hasil3 = document.getElementById("hasil3");
+
+  const jumlah = () =>
+    (hasil3.innerHTML = Number(a.value) + Number(b.value));
+</script>
+
+<hr>
+
+<!-- Mini Project 4 -->
+<input id="usia">
+<button onclick="cek()">Cek Usia</button>
+<p id="hasil4"></p>
+
+<script>
+  const usia = document.getElementById("usia");
+  const hasil4 = document.getElementById("hasil4");
+
+  const cek = () =>
+    (hasil4.innerHTML = usia.value >= 17 ? "Dewasa" : "Anak-anak");
+</script>
+
+<hr>
+
+<!-- Mini Project 5 -->
+<button onclick="hello()">hello</button>
+<p id="hasil5"></p>
+
+<script>
+  const hasil5 = document.getElementById("hasil5");
+
+  const hello = () => (hasil5.innerHTML = "Hello World");
+</script>
+
+</body>
+</html>
