@@ -1,20 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author ICAH
- */
 public class sepuluhRPL {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        muridRPL objek= new muridRPL();
+        System.out.println(objek.nama);
+        System.out.println("nama anda adalah "+objek.nama);
+        objek.nama="chaca";
+        System.out.println(objek.nama);
+        System.out.println(objek.absen=13 );
+        System.out.println("");
+        System.out.println("");
+    
+        objek.dataSISWA ();
+        
+        int tampilanLUAS=objek.menghitungPersegi();
+        
+        System.out.println("luas persegi adalah "+tampilanLUAS);
+        
+      
+        siswaRPL obc= new siswaRPL();
+        obc.hobiSISWA();
+     
+        
+        int hasilvolume=obc.menghitungBALOK();
+        System.out.println("volume balok adalah "+hasilvolume);
+        
     }
     
 }
